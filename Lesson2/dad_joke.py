@@ -17,5 +17,3 @@ def fetch_dad_joke():
     return data['joke']
 
 
-for i in range(10):
-    print(fetch_dad_joke())
