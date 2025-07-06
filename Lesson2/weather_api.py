@@ -19,9 +19,8 @@ def get_weather(city):
 
         description,temp,feels_like = weather_result["weather"][0]["description"],weather_result["main"]["temp"],weather_result["main"]["feels_like"]
 
-        return (f"The city of {city} has a temperature of {temp} °C and feels like is {feels_like} °C. The weather conditions are: {description}")
+        return (f"The city of {city} has a temperature of {temp} °C and feels like it's {feels_like} °C. The weather conditions are: {description}")
     except ValueError:
         return (f"The city of {city} is not available")
 
 
-get_weather(city="Ottawa")
